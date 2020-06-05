@@ -17,3 +17,5 @@
 .byebug_history
 
 public/uploads/*
+
+#ブランチの作成のし忘れでPullが出来なくなったので急遽追加しました
