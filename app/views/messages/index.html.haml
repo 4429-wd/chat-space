@@ -1,0 +1,51 @@
+.wrapper
+  
+  .side-bar
+    .__user-name
+      .__top-items
+        .__name
+          dogman
+        %ul.__function
+          %li.mark
+            %i{class: "far fa-edit"}
+          %li.mark
+            %i{class: "fas fa-cog"}
+        
+          
+    .__group-list
+      .groups
+        .__group-name
+        犬集会
+        .__group-message
+        ようこそ
+  
+  .main-chat
+    .__menber--list
+      .left-list
+        犬集会
+        .left-list__members
+          Member:
+          .members__famly
+            ken
+      .right-list
+        Edit
+    .__talk--list
+      .over
+        .over__user-name
+          dogman
+        .over__date
+        2020/04/18
+      .under
+        .under__comment
+          今日のご飯はなんだろな
+
+    .message-form
+      %form
+      %input.message-form__comment{placeholder: 'type a message'}
+        .comment__form-space
+        %label.form-space__image
+          %i{class:  "far fa-image"}
+          %input.hide{type: "file"}
+      %input.submit{type: 'submit', value: 'Send'}
+
+     
