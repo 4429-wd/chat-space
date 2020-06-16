@@ -9,15 +9,15 @@
 
 .side-bar{
   width: 300px;
-  color: white;
+  color: #ffffff;
 }
 
 .__user-name{
   height: 100px;
-  background-color: #253141;
+  background-color: $side_blue_dark;
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: $size_middium;
 }
 
 .__top-items{
@@ -30,7 +30,6 @@
       
 .top-items__name{
   font-weight: bold;
-
 }
 
 .top-items__function{
@@ -42,8 +41,8 @@
 }
 .__group-list{
   height: calc(100vh - 100px);
-  background-color: #2f3e51;
-  color: #ffffff;
+  background-color: $side_blue_light;
+  color: $white;
   font-family: bold;
   padding: 0 20px;
 }
@@ -52,120 +51,12 @@
   padding: 20px 0 40px;
 }
       
-.groups__group-name{
-  font-size: 15px;
+.__group-name{
+  font-size: $size_small;
 }
       
-.groups__group-message{
+.__group-message{
   font-size: 11px;
   margin-top: 5px;
 }
       
-
-.main-chat{
-  width: calc(100vw - 300px);
-}
-
-.__member--list{
-  height: 100px;
-  background-color: #ffffff;
-  border-bottom: solid #eeeeee;
-  display: flex;
-  padding: 0 40px;
-  justify-content: space-between;
-  }
-
-.left-list{
-  color: #333;
-  font-size: 20px;
-  margin-top: 35px;
-}
-
-.left-list__members{ 
-  color: #999;
-  font-size: 12px;
-  margin-top: 15px;
-  display: flex;
-}
-
-.right-list{
-  border: 1px solid #38AEF0;
-  color: #38AEF0;
-  height: 40px;
-  line-height: 40px;
-  margin-top: 20px;
-  padding: 0 20px;
-}
-
-.__talk--list{
-  height: calc(100vh - 190px);
-  background-color: #fafafa;
-  padding: 46px 40px 0;
-}
-
-.over{
-  display: flex;
-}
-
-.over__user-name{
-  color: #333333;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.over__date{
-  color: #999999;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.under{
-  margin-top: 10px;
-}
-
-.under__comment{
-  font-size: 14px;
-  color: #434A54;
-  margin-bottom: 40px;
-}
-
-
-.message-form{
-  height: 90px;
-  background-color: #d2d2d2;
-  padding: 20px 20px 20px 50px;
-}
-
-.message-form__comment{
-  width: calc(100% - 150px);
-  height: 50px;
-  padding-left: 10px;
-  border: none;
-}
-
-.comment__form-space{
-  background-color: #ffffff;
-  height: 50px;
-  float: right;
-  position: relative;
-}
-
-.form-space__image{
-  line-height: 50px;
-  position: absolute;
-  right: 175px;
-}
-
-.hide{
-  display: none;
-}
-
-.submit{
-  background-color: #38AEF0;
-  border: none;
-  color: #ffffff;
-  width: 100px;
-  height: 50px;
-  font-size: 16px;
-  padding: 0 30px;
-}
