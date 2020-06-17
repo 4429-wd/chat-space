@@ -2,16 +2,16 @@
   = render "side_bar"
 
   .main-chat
-    .__member--list
+    .member-list
       .left-list
         犬集会
         .left-list__members
           Member:
-          .members__famly
+          .family
             ken
       .right-list
         Edit
-    .__talk--list
+    .talk--list
       .over
         .over__user-name
           dogman
@@ -28,14 +28,13 @@
       .under
         .under__comment
           今日のご飯はなんだろな
-
-    .message-form
+    .form
       %form
-      %input.message-form__comment{placeholder: 'type a message'}
-        .comment__form-space
-        %label.form-space__image
-          %i{class:  "far fa-image"}
-          %input.hide{type: "file"}
-      %input.submit{type: 'submit', value: 'Send'}
+        %input.form__comment{placeholder: 'type a message'}
+        .form__space
+          %label.form__space__image
+            = icon('fa','image', class: 'img')
+            %input.hide{type: 'file'}
+        %input.form__submit{type: 'submit', value: 'Send'}
 
      

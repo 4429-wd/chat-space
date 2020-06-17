@@ -10,53 +10,48 @@
 .side-bar{
   width: 300px;
   color: $white;
+  .user-name{
+    height: 100px;
+    background-color: $side_blue_dark;
+    display: flex;
+    align-items: center;
+    font-size: $size_middium;
+  .top-items{
+    height:20px;
+    width:260px;
+    margin: 0 20px; 
+    display: flex;
+    justify-content: space-between;
+    &__name{
+    font-weight: bold;
+    font-size: $size_middium;
+    }
+    &__function{
+      display: inline-block;
+    }
+    .mark{
+      display: inline-block;
+      color: $white;
+    }
+  }
 }
 
-.__user-name{
-  height: 100px;
-  background-color: $side_blue_dark;
-  display: flex;
-  align-items: center;
-  font-size: $size_middium;
-}
-
-.__top-items{
-  height:20px;
-  width:260px;
-  margin: 0 20px; 
-  display: flex;
-  justify-content: space-between;
-}
-      
-.top-items__name{
-  font-weight: bold;
-}
-
-.top-items__function{
-  display: inline-block;
-}
-
-.mark{
-  display: inline-block;
-}
-.__group-list{
+.group-list{
   height: calc(100vh - 100px);
   background-color: $side_blue_light;
   color: $white;
   font-family: bold;
   padding: 0 20px;
-}
-          
-.groups{
+  .groups{
   padding: 20px 0 40px;
+  &__name{
+    font-size: $size_small;
+  }
+  &__message{
+    font-size: 11px;
+    margin-top: 5px;
 }
-      
-.__group-name{
-  font-size: $size_small;
-}
-      
-.__group-message{
-  font-size: 11px;
-  margin-top: 5px;
+    }
+  }
 }
       

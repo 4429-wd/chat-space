@@ -1,16 +1,16 @@
 .side-bar
-  .__user-name
-    .__top-items
-      .__name
+  .user-name
+    .top-items
+      .top-items__name
         dogman
-      %ul.__function
-        %li.mark
-          %i{class: "far fa-edit"}
-        %li.mark
-          %i{class: "fas fa-cog"}
-  .__group-list
+      %ul.top-items__function
+        = link_to '#' do
+          = icon('fa', 'edit',class: 'mark')
+        = link_to '#' do
+          = icon('fa', 'cog',class: 'mark')
+  .group-list
     .groups
-      .__group-name
+      .groups__name
         犬集会
-      .__group-message
+      .groups__message
         ようこそ
