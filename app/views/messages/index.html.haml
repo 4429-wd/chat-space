@@ -1,0 +1,40 @@
+.wrapper
+  = render "side_bar"
+
+  .main-chat
+    .member-list
+      .left-list
+        犬集会
+        .left-list__members
+          Member:
+          .family
+            ken
+      .right-list
+        Edit
+    .talk--list
+      .over
+        .over__user-name
+          dogman
+        .over__date
+        2020/04/18
+      .under
+        .under__comment
+          今日のご飯はなんだろな
+      .over
+        .over__user-name
+          dogman
+        .over__date
+        2020/04/18
+      .under
+        .under__comment
+          今日のご飯はなんだろな
+    .form
+      %form
+        %input.form__comment{placeholder: 'type a message'}
+        .form__space
+          %label.form__space__image
+            = icon('fa','image', class: 'img')
+            %input.hide{type: 'file'}
+        %input.form__submit{type: 'submit', value: 'Send'}
+
+     
