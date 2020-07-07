@@ -29,32 +29,37 @@
   }
 }
 
-.talk--list{
+.messages{
   height: calc(100vh - 190px);
   background-color: #fafafa;
   padding: 46px 40px 0;
-  .over{
-    display: flex;
-    &__user-name{
-      color: #333333;
-      font-size: $size_middium;
-      font-weight: bold;
+  overflow: scroll;
+  box-sizing: border-box;
+  .message{
+    .over{
+      display: flex;
+      &__user-name{
+        color: #333333;
+        font-size: $size_middium;
+        font-weight: bold;
+      }
+      &__date{
+        color: #999999;
+        font-size: $size_middium;
+        font-weight: bold;
+      }
     }
-    &__date{
-      color: #999999;
-      font-size: $size_middium;
-      font-weight: bold;
-    }
-  }
-  .under{
-    margin-top: 10px;
-    &__comment{
-      font-size: 14px;
-      color: #434A54;
-      margin-bottom: 40px;
+    .under{
+      margin-top: 10px;
+      &__comment{
+        font-size: 14px;
+        color: #434A54;
+        margin-bottom: 40px;
+      }
     }
   }
 }
+
 .form{
   height: 90px;
   background-color: #d2d2d2;
