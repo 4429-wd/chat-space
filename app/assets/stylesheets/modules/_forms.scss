@@ -21,11 +21,14 @@
   }
   .right-list{
     border: 1px solid $light_blue;
-    color: $light_blue;
     height: 40px;
     line-height: 40px;
     margin-top: 20px;
     padding: 0 20px;
+    .editlink{
+      text-decoration: none;
+      color: $light_blue;
+    }
   }
 }
 
@@ -51,7 +54,7 @@
     }
     .under{
       margin-top: 10px;
-      &__comment{
+      &__content{
         font-size: 14px;
         color: #434A54;
         margin-bottom: 40px;
